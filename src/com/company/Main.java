@@ -9,12 +9,8 @@ public class Main {
     private static ArrayList<HashSet<Integer>> lefts, rights;
 
     public static void main(String[] args) throws FileNotFoundException {
-	    boolean fl;
-
 	    for( int i = 1; i < 15; i++ ){
-	        fl = startTest( i );
-
-	        if( fl ) System.out.printf( "Test %d passed successfully\n", i );
+	        if( startTest(i) ) System.out.printf( "Test %d passed successfully\n", i );
 	        else System.out.printf( "Test %d failed\n", i );
         }
     }
